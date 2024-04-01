@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+    <title>Christoffer Andersson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/output.css">
+</head>
+
+<body class="p-5 flex flex-col gap-5">
+    <div class="flex flex-col gap-2 md:flex-row">
+        <img class="max-w-[100%] md:max-w-[25%] " src="/assets/face-cropped.jpg" alt="picture">
+        <div class="space-y-5">
+            <h1 class="text-4xl">Hellooo!!!</h1>
+            <p>
+                My name Christoffer. I'm a fourth year student at KTH currently taking the Computer
+                Science Master with a specialisation in Visualisation and Interactive Graphics.
+            </p>
+            <p>
+                I'm very comfortable programming in C, C++ and Rust along with using various graphics API:s such as
+                WebGPU and OpenGL. I also like to build front/backends using a combination of golang and
+                javascript/typescript.
+                <br />
+            </p>
+            <p>
+                If you see me outside of studying or working on personal projects I am probably at football practice
+                or preparing the reception for new students at KTH.
+            </p>
+            <a class="p-1 bg-blue-200 rounded flex flex-row gap-2 items-center justify-center" href="#projects">
+                Check out my projects
+                <img class="w-8" src="/assets/downarrow.svg" alt="github logo">
+            </a>
+            <div class="flex flex-row gap-2">
+                <div class="flex flex-row gap-2 items-center">
+                    <img class="w-8" src="/assets/github.svg" alt="github logo">
+                    <a class="text-blue-500" href="https://github.com/stofffe">Github</a>
+                </div>
+                <div class="flex flex-row gap-2 items-center">
+                    <img class="w-8" src="/assets/linkedin.png" alt="linkedin logo">
+                    <a class="text-blue-500"
+                        href="https://www.linkedin.com/in/christoffer-andersson-11b106226/">LinkedIn</a>
+                </div>
+                <div class="flex flex-row gap-2 items-center">
+                    <img class="w-8" src="/assets/mail.png" alt="mail logo">
+                    <a class="text-blue-500" href="mailto:christoffer.x.andersson@gmail.com">Mail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h1 class="text-4xl pt-5">My projects</h1>
+
+        <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-xl italic pt-5 pb-2 font-bold">Procedural grass from Ghost Of Tsushima</h2>
+
+                <img class="w-1/2" src="/assets/grass.png" alt="grass">
+                <p>
+                    Recreation of the GDC talk "Procedural grass in Ghost Of Tsushima" using a custom engine built using
+                    Rust and WebGPU.
+                </p>
+                <a class="text-blue-500" href="projects/grass/index.html">More info + Live demo</a>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h2 class="text-xl italic pt-5 font-bold">Golang validation through Code Generation</h2>
+
+                <p>
+                    Using code generation to achieve better struct validation with features such as required field
+                    checking
+                    not
+                    possible
+                    with other packages. More detailed information can be found in github
+                    <a class="text-blue-500" href="https://github.com/stofffe/vgen/blob/main/README.md">README</a>.
+                </p>
+                <div class="flex flex-row gap-2 items-center">
+                    <img class="w-8" src="/assets/github.svg" alt="github logo">
+                    <a class="text-blue-500" href="https://github.com/stofffe/vgen">Github</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h2 class="text-xl italic pt-5 font-bold">Ray marcher</h2>
+                <img class="w-1/2" src="/assets/raymarcher.png" alt="grass">
+                <p>A multi-threaded software raymarcher with texture support, boolean operations and many unique shapes
+                </p>
+                <div class="flex flex-row gap-2 items-center">
+                    <img class="w-8" src="/assets/github.svg" alt="github logo">
+                    <a class="text-blue-500" href="https://github.com/stofffe/software-raymarcher">Github</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h2 class="text-xl italic pt-5 font-bold">Pixel renderer</h2>
+                <p>A cross platform GPU driven pixel renderer built using Rust and WebGPU. Also the engine used for ray
+                    marcher project above.</p>
+                <div class="flex flex-row gap-2 items-center">
+                    <img class="w-8" src="/assets/cratesio.png" alt="github logo">
+                    <a class="text-blue-500" href="https://crates.io/crates/pixelated">Crates.io</a>
+                </div>
+                <div class="flex flex-row gap-2 items-center">
+                    <img class="w-8" src="/assets/github.svg" alt="github logo">
+                    <a class="text-blue-500" href="https://github.com/stofffe/pixelated">Github</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h2 class="text-xl italic pt-5 font-bold">Gif maker</h2>
+                <div class="flex flex-row">
+                    <img class="w-8" src="/assets/giftext.gif" alt="github logo">
+                    <img class="w-8" src="/assets/gifupdown.gif" alt="github logo">
+                    <img class="w-8" src="/assets/gifspin.gif" alt="github logo">
+                </div>
+                <p>A quick tool for creating animated gifs made for the computer science reception</p>
+                <a class="text-blue-500" href="https://stofffe.github.io/gif-maker">Website Link</a>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h2 class="text-xl italic pt-5 font-bold">Online Yatzy</h2>
+                <p>A online yatzy sheet with online support through websockets</p>
+                <a class="text-blue-500" href="https://yatzy-sheet.onrender.com">Website Link (NOTE!! Due to free
+                    hosting
+                    inital load can take 30s)
+                </a>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
