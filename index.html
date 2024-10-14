@@ -8,41 +8,8 @@
 </head>
 
 <body class="bg-neutral-200 p-5">
-    <!-- phone -->
-    <div class="block sm:hidden">
-        <div class="flex flex-col gap-2">
-            <img class="h-20v self-start rounded-full" src="assets/face-cropped.jpg" alt="" />
-
-            <div class="mt-5 flex flex-col gap-2">
-                <p class="text-4xl">Christoffer Andersson</p>
-                <div class="flex flex-row flex-wrap gap-2">
-                    <div class="flex flex-row items-center gap-2">
-                        <img class="w-8" src="assets/resume.png" alt="resume logo">
-                        <a class="text-blue-500" href="assets/resume.pdf">Resume</a>
-                    </div>
-                    <div class="flex flex-row items-center gap-2">
-                        <img class="w-8" src="assets/github.svg" alt="github logo">
-                        <a class="text-blue-500" href="https://github.com/stofffe">Github</a>
-                    </div>
-                    <div class="flex flex-row items-center gap-2">
-                        <img class="w-8" src="assets/linkedin.png" alt="linkedin logo">
-                        <a class="text-blue-500"
-                            href="https://www.linkedin.com/in/christoffer-andersson-11b106226/">LinkedIn</a>
-                    </div>
-                    <div class="flex flex-row items-center gap-2">
-                        <img class="w-8" src="assets/mail.png" alt="mail logo">
-                        <a class="text-blue-500" href="mailto:christoffer.x.andersson@gmail.com">Mail</a>
-                    </div>
-                </div>
-            </div>
-
-            <a class="mt-20 self-start rounded border border-black bg-blue-50 p-2" href="">My Projects!</a>
-        </div>
-    </div>
-
-    <!-- computer -->
+    <!-- computer header -->
     <div class="hidden sm:block">
-        <!-- header -->
         <div class="flex h-100v flex-col items-center px-10 pt-40">
             <div class="flex flex-row items-end justify-center">
                 <div class="flex flex-col gap-5">
@@ -79,188 +46,226 @@
         </div>
 
         <div class="h-50v"></div>
+    </div>
 
-        <!-- projects -->
-        <div id="projects" class="relative flex flex-col gap-5">
-            <h1 class="mb-10 text-5xl">My projects</h1>
-            <div class="grid grid-cols-2 gap-5">
-                <!-- grass -->
-                <div id="grass" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Procedural Grass from Ghost of Thusima</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gbase">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                        <a class="flex flex-row items-center gap-2" href="/projects/grass/index.html">
-                            <img class="w-8" src="assets/play-button.svg" alt="demo logo">
-                            <p class="text-xl text-blue-500">Demo</p>
-                        </a>
-                    </div>
-                    <p>A recreation of the grass in the game Ghost of Thusima. Uses a combination of instanced
-                        rendering and compute shaders in order to achieve performance and versatility. Dynamically
-                        generates meshes each frame that adapts to external forces such as wind. Built on top of
-                        <a class="text-blue-500" href="#gbase">Custom Engine</a>.
-                    </p>
+    <!-- phone header -->
+    <div class="block sm:hidden">
+        <div class="relative flex  h-100v flex-col items-center gap-5 px-10 pt-32">
+            <img class="h-20v rounded-full" src="assets/face-cropped.jpg" alt="" />
+            <p class="text-center text-5xl">Christoffer Andersson</p>
+            <div class="grid grid-cols-2 gap-3">
+                <a class="flex flex-row items-center gap-2" href="assets/resume.pdf">
+                    <img class="w-8" src="assets/resume.png" alt="resume logo">
+                    <p class="text-blue-500">Resume</p>
+                </a>
+                <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe">
+                    <img class="w-8" src="assets/github.svg" alt="github logo">
+                    <p class="text-blue-500">Github</p>
+                </a>
+                <a class="flex flex-row items-center gap-2"
+                    href="https://www.linkedin.com/in/christoffer-andersson-11b106226/">
+                    <img class="w-8" src="assets/linkedin.png" alt="linkedin logo">
+                    <p class="text-blue-500">LinkedIn</p>
+                </a>
+                <a class="flex flex-row items-center gap-2" href="mailto:christoffer.x.andersson@gmail.com">
+                    <img class="w-8" src="assets/mail.png" alt="mail logo">
+                    <p class="text-blue-500">Mail</p>
+                </a>
+
+            </div>
+            <a href="#projects"
+                class="absolute bottom-0 mb-14 flex flex-row items-center gap-2 rounded border border-black bg-slate-50 p-2 hover:bg-slate-200">
+                <img class="w-7" src="assets/downarrow-2.svg" alt="downwards arrow">
+                <p class="">My Projects</p>
+                <img class="w-7" src="assets/downarrow-2.svg" alt="downwards arrow">
+            </a>
+        </div>
+
+        <div class="h-50v"></div>
+    </div>
+
+    <div id="projects" class="relative flex flex-col gap-5">
+        <h1 class="mb-10 text-5xl">My projects</h1>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <!-- grass -->
+            <div id="grass" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Procedural Grass from Ghost of Thusima</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gbase">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
+                    <a class="flex flex-row items-center gap-2" href="/projects/grass/index.html">
+                        <img class="w-8" src="assets/play-button.svg" alt="demo logo">
+                        <p class="text-xl text-blue-500">Demo</p>
+                    </a>
                 </div>
-                <img class="rounded" src="assets/grass.png" alt="">
-                <img class="rounded" src="assets/raymarcher.png" alt="">
-                <!-- raymarcher -->
-                <div id="raymarcher" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Raymarcher</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2"
-                            href="https://github.com/stofffe/software-raymarcher">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                    </div>
-                    <p>CPU implementation of raymarching. Is a variation of raytracing that uses signed distance
-                        fields to dynamically choose stepsize. Built on top of <a class="text-blue-500"
-                            href="#pixelated">Pixelated</a>.
-                    </p>
+                <p>A recreation of the grass in the game Ghost of Thusima. Uses a combination of instanced
+                    rendering and compute shaders in order to achieve performance and versatility. Dynamically
+                    generates meshes each frame that adapts to external forces such as wind. Built on top of
+                    <a class="text-blue-500" href="#gbase">Custom Engine</a>.
+                </p>
+            </div>
+            <img class="rounded" src="assets/grass.png" alt="">
+            <img class="rounded" src="assets/raymarcher.png" alt="">
+            <!-- raymarcher -->
+            <div id="raymarcher" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Raymarcher</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/software-raymarcher">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
                 </div>
-                <!-- gbase -->
-                <div id="gbase" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Custom Engine</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gbase">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                    </div>
-                    <p>A cross platform engine written in Rust and WebGPU. Focuses on simplicity and not abstracting
-                        away too much from the user. Used as base for projects such as <a class="text-blue-500"
-                            href="#grass">Procedural Grass from Ghost of Thusima</a> and <a class="text-blue-500"
-                            href="#post-processing">Post Processing</a>.</p>
+                <p>CPU implementation of raymarching. Is a variation of raytracing that uses signed distance
+                    fields to dynamically choose stepsize. Built on top of <a class="text-blue-500"
+                        href="#pixelated">Pixelated</a>.
+                </p>
+            </div>
+            <!-- gbase -->
+            <div id="gbase" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Custom Engine</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gbase">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
                 </div>
-                <img class="rounded" src="assets/gbase.png" alt="">
-                <!-- post processing -->
-                <div class="grid grid-cols-2 rounded">
-                    <img class="" src="assets/post-processing-hellokitty-before.png" alt="">
-                    <img class="" src="assets/post-processing-hellokitty-after.png" alt="">
-                    <img class="" src="assets/post-processing-city-before.png" alt="">
-                    <img class="" src="assets/post-processing-city-after.png" alt="">
+                <p>A cross platform engine written in Rust and WebGPU. Focuses on simplicity and not abstracting
+                    away too much from the user. Used as base for projects such as <a class="text-blue-500"
+                        href="#grass">Procedural Grass from Ghost of Thusima</a> and <a class="text-blue-500"
+                        href="#post-processing">Post Processing</a>.</p>
+            </div>
+            <img class="rounded" src="assets/gbase.png" alt="">
+            <!-- post processing -->
+            <div class="grid grid-cols-2 rounded">
+                <img class="" src="assets/post-processing-hellokitty-before.png" alt="">
+                <img class="" src="assets/post-processing-hellokitty-after.png" alt="">
+                <img class="" src="assets/post-processing-city-before.png" alt="">
+                <img class="" src="assets/post-processing-city-after.png" alt="">
+            </div>
+            <div id="post-processing" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Post Processing</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gbase">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
                 </div>
-                <div id="post-processing" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Post Processing</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gbase">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                    </div>
-                    <p>Post processing shaders using Box, Median, Gaussian and Sobel convolution filters. Built on
-                        top of <a class="text-blue-500" href="#gbase">Custom Engine</a>. </p>
+                <p>Post processing shaders using Box, Median, Gaussian and Sobel convolution filters. Built on
+                    top of <a class="text-blue-500" href="#gbase">Custom Engine</a>. </p>
+            </div>
+            <!-- <img class="rounded" src="assets/pixelated.png" alt=""> -->
+            <!-- chrome search -->
+            <div id="chrome-search" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Chrome Search</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/chrome-search">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
+                    <a class="flex flex-row items-center gap-2"
+                        href="https://chromewebstore.google.com/detail/chrome-search/ahpclloakbifokamoffalfhkjmkfpkdb">
+                        <img class="w-8" src="assets/chrome-web-store.png" alt="chrome web store logo">
+                        <p class="text-xl text-blue-500">Web Store</p>
+                    </a>
                 </div>
-                <!-- <img class="rounded" src="assets/pixelated.png" alt=""> -->
-                <!-- chrome search -->
-                <div id="chrome-search" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Chrome Search</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/chrome-search">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                        <a class="flex flex-row items-center gap-2"
-                            href="https://chromewebstore.google.com/detail/chrome-search/ahpclloakbifokamoffalfhkjmkfpkdb">
-                            <img class="w-8" src="assets/chrome-web-store.png" alt="chrome web store logo">
-                            <p class="text-xl text-blue-500">Web Store</p>
-                        </a>
-                    </div>
-                    <p>An opinionated cross platform pixel renderer focusing on simplicity. Super easy way to draw
-                        pixels to the screen in Rust. Used as base for projects such as <a class="text-blue-500"
-                            href="#raymarcher">Raymarcher</a>.</p>
+                <p>An opinionated cross platform pixel renderer focusing on simplicity. Super easy way to draw
+                    pixels to the screen in Rust. Used as base for projects such as <a class="text-blue-500"
+                        href="#raymarcher">Raymarcher</a>.</p>
+            </div>
+            <img class="rounded" src="assets/chrome-search.gif" alt="">
+            <!-- pixelated -->
+            <div id="pixelated" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Pixelated</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/pixelated">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
+                    <a class="flex flex-row items-center gap-2" href="https://crates.io/crates/pixelated">
+                        <img class="w-8" src="assets/cratesio.png" alt="crates.io logo">
+                        <p class="text-xl text-blue-500">Crates.io</p>
+                    </a>
                 </div>
-                <img class="rounded" src="assets/chrome-search.gif" alt="">
-                <!-- pixelated -->
-                <div id="pixelated" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Pixelated</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/pixelated">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                        <a class="flex flex-row items-center gap-2" href="https://crates.io/crates/pixelated">
-                            <img class="w-8" src="assets/cratesio.png" alt="crates.io logo">
-                            <p class="text-xl text-blue-500">Crates.io</p>
-                        </a>
-                    </div>
-                    <p>An opinionated cross platform pixel renderer focusing on simplicity. Super easy way to draw
-                        pixels to the screen in Rust. Used as base for projects such as <a class="text-blue-500"
-                            href="#raymarcher">Raymarcher</a>.</p>
+                <p>An opinionated cross platform pixel renderer focusing on simplicity. Super easy way to draw
+                    pixels to the screen in Rust. Used as base for projects such as <a class="text-blue-500"
+                        href="#raymarcher">Raymarcher</a>.</p>
+            </div>
+            <!-- vgen -->
+            <div id="vgen" class=" flex flex-col gap-3">
+                <h3 class="text-3xl">Vgen</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/vgen">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
                 </div>
-                <!-- vgen -->
-                <div id="vgen" class=" flex flex-col gap-3">
-                    <h3 class="text-3xl">Vgen</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/vgen">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                    </div>
-                    <p>CLI for type safe struct validation in Golang. Generate custom types that allow for type safe
-                        validation as compared to the common runtime string based approach. Support for most common
-                        validation rules, nested rules, custom rules and more. More detailed description can be
-                        found in github repo.
-                    </p>
+                <p>CLI for type safe struct validation in Golang. Generate custom types that allow for type safe
+                    validation as compared to the common runtime string based approach. Support for most common
+                    validation rules, nested rules, custom rules and more. More detailed description can be
+                    found in github repo.
+                </p>
+            </div>
+            <!-- cargorun -->
+            <div id="cargorun" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Cargorun</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/cargorun">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
                 </div>
-                <!-- cargorun -->
-                <div id="cargorun" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Cargorun</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/cargorun">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                    </div>
-                    <p>CLI for running rust projects. Allows for shell/auto completion
-                        when running examples or binaries from a cargo project. More detailed description can be
-                        found in github repo.
-                    </p>
+                <p>CLI for running rust projects. Allows for shell/auto completion
+                    when running examples or binaries from a cargo project. More detailed description can be
+                    found in github repo.
+                </p>
+            </div>
+            <!-- slacky -->
+            <div id="slacky" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Slacky</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/slacky">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
                 </div>
-                <!-- slacky -->
-                <div id="slacky" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Slacky</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/slacky">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                    </div>
-                    <p>CLI for converting slack json data to a more readable format. </p>
+                <p>CLI for converting slack json data to a more readable format. </p>
+            </div>
+            <!-- yatzy -->
+            <div id="yatzy" class="flex flex-col gap-3">
+                <h3 class="text-3xl">Multiplayer Yatzy</h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://yatzy-sheet.onrender.com">
+                        <img class=" w-8" src="assets/www.svg" alt="chrome web store logo">
+                        <p class="text-xl text-blue-500">Link</p>
+                        <p>(NOTE! up to 30s load time due to free hosting)</p>
+                    </a>
                 </div>
-                <!-- yatzy -->
-                <div id="yatzy" class="flex flex-col gap-3">
-                    <h3 class="text-3xl">Multiplayer Yatzy</h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://yatzy-sheet.onrender.com">
-                            <img class=" w-8" src="assets/yatzy-logo.svg" alt="chrome web store logo">
-                            <p class="text-xl text-blue-500">Link</p>
-                            <p>(NOTE! up to 30s load time due to free hosting)</p>
-                        </a>
-                    </div>
-                    <p>
-                        A yatzy sheet with support for multiple devices. Uses websockets to keep clients up to date.
-                    </p>
+                <p>
+                    A yatzy sheet with support for multiple devices. Uses websockets to keep clients up to date.
+                </p>
+            </div>
+            <!-- gif -->
+            <div id="gif" class=" flex flex-col gap-3">
+                <h3 class="text-3xl">Gif-Maker </h3>
+                <div class="flex flex-row gap-5">
+                    <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gif-maker">
+                        <img class="w-8" src="assets/github.svg" alt="github logo">
+                        <p class="text-xl text-blue-500">Github</p>
+                    </a>
+                    <a class="flex flex-row items-center gap-2" href="https://stofffe.github.io/gif-maker/">
+                        <img class=" w-8" src="assets/www.svg" alt="chrome web store logo">
+                        <p class="text-xl text-blue-500">Link</p>
+                    </a>
                 </div>
-                <!-- gif -->
-                <div id="gif" class=" flex flex-col gap-3">
-                    <h3 class="text-3xl">Gif-Maker </h3>
-                    <div class="flex flex-row gap-5">
-                        <a class="flex flex-row items-center gap-2" href="https://github.com/stofffe/gif-maker">
-                            <img class="w-8" src="assets/github.svg" alt="github logo">
-                            <p class="text-xl text-blue-500">Github</p>
-                        </a>
-                    </div>
-                    <p>A tool for creating custom gifs from existing images or from text. Supports scaling,
-                        rotating, scrolling and more.
-                    </p>
-                    <div class="flex flex-row">
-                        <img class="w-12" src="assets/giftext.gif" alt="github logo">
-                        <img class="w-12" src="assets/gifupdown.gif" alt="github logo">
-                        <img class="w-12" src="assets/gifspin.gif" alt="github logo">
-                    </div>
+                <p>A tool for creating custom gifs from existing images or from text. Supports scaling,
+                    rotating, scrolling and more.
+                </p>
+                <div class="flex flex-row">
+                    <img class="w-12" src="assets/giftext.gif" alt="github logo">
+                    <img class="w-12" src="assets/gifupdown.gif" alt="github logo">
+                    <img class="w-12" src="assets/gifspin.gif" alt="github logo">
                 </div>
             </div>
         </div>
