@@ -8,30 +8,13 @@
     <link rel="stylesheet" href="../../output.css">
 </head>
 
-<body class="flex flex-col p-5 gap-2">
-    <h1 class="text-2xl mt-5">Procedural grass from Ghost Of Tsushima</h1>
-    <img class="w-1/2" src="../../assets/grass.png" alt="grass">
-    <p>This project is built using a custom graphics engine using primarily Rust and WebGPU.
-    </p>
-    <p>Some things i learned from this project was</p>
-    <ul class="ml-5 list-disc">
-        <li>Creatin a custom graphics engine</li>
-        <li>How the render pipeline works</li>
-        <li>Compute shaders</li>
-        <li>Procedurally generating vertices</li>
-        <li>Phong shading with custom specular blending with distance</li>
-        <li>Compiling to WebAssembly</li>
-    </ul>
-    <div class="flex flex-row gap-2 items-center">
-        <img class="w-8" src="../../assets/github.svg" alt="github logo">
-        <a class="text-blue-500" href="https://github.com/stofffe/gbase/blob/main/examples/grass.rs">Github</a>
-    </div>
-
-    <div class="mt-5" id="play-container">
+<body class="flex flex-col gap-2 p-5">
+    <h1 class="mt-5 text-2xl">Procedural grass from Ghost Of Tsushima</h1>
+    <div class="" id="play-container">
         <button class="rounded border bg-blue-200 p-1" id="play">Play demo</button>
         <p>Note that WebGPU support is needed</p>
     </div>
-    <canvas class="w-0 h-0" id="gbase" width="720" height="480"></canvas>
+    <canvas class="h-0 w-0" id="gbase" width="720" height="480"></canvas>
     <script type="module" async>
         import init from './pkg/web.js'
         const mod = await init()
@@ -49,3 +32,21 @@
 </body>
 
 </html>
+
+<!-- <img class="w-1/2" src="../../assets/grass.png" alt="grass"> -->
+<!-- <p>This project is built using a custom graphics engine using primarily Rust and WebGPU. -->
+<!-- </p> -->
+<!-- <p>Some things i learned from this project was</p> -->
+<!-- <ul class="ml-5 list-disc"> -->
+<!--     <li>Creatin a custom graphics engine</li> -->
+<!--     <li>How the render pipeline works</li> -->
+<!--     <li>Compute shaders</li> -->
+<!--     <li>Procedurally generating vertices</li> -->
+<!--     <li>Phong shading with custom specular blending with distance</li> -->
+<!--     <li>Compiling to WebAssembly</li> -->
+<!-- </ul> -->
+<!-- <div class="flex flex-row items-center gap-2"> -->
+<!--     <img class="w-8" src="../../assets/github.svg" alt="github logo"> -->
+<!--     <a class="text-blue-500" href="https://github.com/stofffe/gbase/blob/main/examples/grass.rs">Github</a> -->
+<!-- </div> -->
+<!---->
